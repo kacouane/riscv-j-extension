@@ -98,12 +98,12 @@ WPRI,(V)U-mode PM,WPRI
 .Table 1: Meaning of _PM_ bits for RV32, RV64 and RV128
 |===========================================================================================================================
 ^|*PM Bits* ^|*Name* ^|*Meaning*
-^.^| PM[2:0] ^.^| PM.Enabled |
+^.^| PM[0] ^.^| PM.Enabled |
 
   0 – PM is disabled (_default_) +
   1 – PM is enabled
 
-^.^| PM[3:1] ^.^| PM.Current |
+^.^| PM[1] ^.^| PM.Current |
 
  0 – _**xPMMASK**_ and _**xPMBASE**_ registers can only be modified by the higher privilege mode +
  1 – _**xPMMASK**_ and _**xPMBASE**_ registers can be modified by the same privilege mode
